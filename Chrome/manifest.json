@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Log Formatter",
+    "version": "1.0",
+    "description": "Automatically transforms raw log messages from the LogRhythm Analyze window into an intelligible format.",
+    "icons": {
+        "16": "images/logo.png",
+        "32": "images/logo.png",
+        "48": "images/logo.png",
+        "128": "images/logo.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/log_formatter.js"],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ]
+  }
